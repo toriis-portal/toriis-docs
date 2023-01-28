@@ -1,2 +1,4 @@
-# torris-docs
-Repository for docs and issues. 
+# torris
+Transparent and Open Resource for Institutional Investments
+
+This repository contains all the documentation and issues for the torris project.
