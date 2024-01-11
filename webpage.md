@@ -1,6 +1,22 @@
 In the following tutorial, replace `<new-page>` with the title of your page.
 
-Create a new subdirectory for your page `mkdir src/pages/<new-page>` and create an idex file `touch src/pages/<new-page>/index`. You will now be able to navigate to this page by typing the url `http://localhost:3000/<new-page>` into your browser. To add your new page to the primary navigation bar, open `src/components/navigation/PrimaryNavBar.tsx` and add `<NavButton title="<Page Title>" link="/<new-page>" />` into the sequence of nav buttons, e.g.
+Create a new subdirectory for your page `mkdir src/pages/<new-page>` and create an idex file `touch src/pages/<new-page>/index` e.g.
+```js
+import type { FC } from 'react'
+
+const NewPage: FC = ({
+}) => {
+  return (
+    <>
+        Hello, welcome to my new page! 
+    </>
+  )
+}
+
+export default NewPage
+
+```
+. You will now be able to navigate to this page by typing the url `http://localhost:3000/<new-page>` into your browser. To add your new page to the primary navigation bar, open `src/components/navigation/PrimaryNavBar.tsx` and add `<NavButton title="<Page Title>" link="/<new-page>" />` into the sequence of nav buttons, e.g.
 ```js
 const PrimaryNavBar: FC = () => {
   return (
